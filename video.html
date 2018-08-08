@@ -1,0 +1,415 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="grid-container">
+          <div class="nav__top top-bar">
+            <div class="nav__top-logo top-bar-logo">
+              <ul class="nav__top-menu nav__top-menu--logo menu">
+                <li>
+                  <a href="#" class="nav__bar-wrapper" data-toggle="nav__main" >
+                    <span class="nav__bar-1"></span>
+                    <span class="nav__bar-2"></span>
+                    <span class="nav__bar-3"></span>
+                  </a>
+                </li>
+                <li><a href="/" class="nav__logo nav__logo--default"></a></li>
+                <li class="nav__login mobile"><a href="/" class="button postfix button--rounded button--white-grey button--user-icon"><span><i class="fas fa-user"></i></span></a>
+                <div class="nav__submenu nav__submenu--login">
+                    <div class="nav__submenu-inner">
+                      <div class="header__login">
+                        <h5>Already a member? Please log in</h5>
+                        <form action="/">
+                          <div class="input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Email Address</label>
+                            <input type="text" class="input" placeholder="Enter your email address…"/>
+                          </div>
+                          <div class="input__wrapper input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Password</label>
+                            <input type="text" class="input" placeholder="Enter your password…"/>
+                          </div>
+                          <a href="/" class="forgot-password align-right underline">Forgot your password?</a>
+                          <div class="button__wrapper button__wrapper--padding">
+                            <a href="/" class="button postfix button--rounded button--medium button--white-violet">Log In</a>
+                          </div>
+                          <span class="sign-up">
+                            Not yet a member? <a href="/member-register.html" class="join">Join us now</a>
+                          </span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__search mobile">
+                  <a id="button-search" href="#" class="button postfix button--rounded button--white-grey button--search-icon"><span><i class="fas fa-search"></i></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__top-center top-bar-center">
+              <ul class="nav__top-menu nav__top-menu--left dropdown menu" data-dropdown-menu>
+                <li><a href="/event-listing.html">What's On</a></li>
+                <li><a href="/faq.html">FAQs</a></li>
+                <li><a href="/about-us.html">About us</a></li>
+                <li><a href="/contact-us.html">Contact</a></li>
+                <li class="nav__promoters">
+                  <a href="/">Promoters</a>
+                  <div class="nav__submenu nav__submenu--promoters">
+                  <ul class="menu vertical nav__submenu-inner ">
+                    <li><a href="/member-register.html" class="submenu__link">Become Our Promoters</a></li>
+                    <li><a href="/member-register.html" class="submenu__link">Sign In to Promoters’ Dashboard</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div> <!-- end .nav__top-left -->
+            <div class="nav__top-right top-bar-right">
+              <ul class="nav__top-menu nav__top-menu--right dropdown menu" data-dropdown-menu>
+                <li class="nav__login desktop"><a href="/" class="button postfix button--rounded button--white-grey">Login</a>
+                <div class="nav__submenu nav__submenu--login">
+                    <div class="nav__submenu-inner">
+                      <div class="header__login">
+                        <h5>Already a member? Please log in</h5>
+                        <form action="/">
+                          <div class="input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Email Address</label>
+                            <input type="text" class="input" placeholder="Enter your email address…"/>
+                          </div>
+                          <div class="input__wrapper input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Password</label>
+                            <input type="text" class="input" placeholder="Enter your password…"/>
+                          </div>
+                          <a href="/" class="forgot-password align-right underline">Forgot your password?</a>
+                          <div class="button__wrapper button__wrapper--padding">
+                            <a href="/" class="button postfix button--rounded button--medium button--white-violet">Log In</a>
+                          </div>
+                          <span class="sign-up">
+                            Not yet a member? <a href="/member-register.html" class="join">Join us now</a>
+                          </span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__signup desktop"><a href="/" class="button postfix button--rounded button--white-grey ">Signup</a></li>
+                <li class="nav__search desktop">
+                  <a id="button-search" href="#" class="button postfix button--rounded button--white-grey button--search-icon"><span><i class="fas fa-search"></i></span></a>
+                </li>
+              </ul>
+            </div> <!-- end .nav__top-right -->   
+            <!-- <div class="overlay overlay--menu"></div> -->
+            <div id="submenu-search" class="nav__submenu nav__submenu--search">
+              <div class="grid-container bar__content bar__content--search-top">
+                <form id="bar-search-form" action="/" class="bar__form">
+                  <div class="grid-x">
+                    <div class="col cell small-10 medium-11">
+                      <label>
+                        <input type="text" placeholder="What are you looking for?…" class="input">
+                      </label>
+                    </div>
+                    <div class="col cell small-2 medium-1">
+                      <a href="/" class="button postfix button--transparent button--search-icon">
+                        <span>
+                          <i class="fas fa-search"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div> <!-- .newsletter__content -->
+            </div> <!-- .nav__submenu--search -->
+          </div> <!-- end .top-bar -->
+        </div>
+      </nav>
+    </header>    <main class="page">
+      <div class="video">
+        <div class="grid-container fluid">
+          <ul class="split-menu menu">
+            <li><h2>Latest Videos</h2></li>
+            <li>
+              <ul class="menu list">
+                <li class="init">All Videos</li>
+                <li data-value="All Videos">All Videos</li>
+                <li data-value="AFL">AFL</li>
+                <li data-value="Rugby">Rugby</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="grid-x">
+            <div class="video__left cell small-12 medium-8 large-9">
+              <div rel="human-rights-awards-2017" class="video__main">
+                <div class="videoWrapper">
+                  <iframe class="iframe" width="640" height="360" src="http://www.youtube.com/embed/WiQq_XAVPLg?enablejsapi=1&version=3&playerapiid=ytplayer&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                </div>
+              </div>
+              <div rel="AFL-standup-to-racism" class="video__main active">
+                <div class="videoWrapper">
+                  <iframe class="iframe" width="640" height="360" src="http://www.youtube.com/embed/ASsZ-u9YV3c?enablejsapi=1&version=3&playerapiid=ytplayer&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                </div>
+              </div>
+              <div rel="rugby-standup-to-racism" class="video__main">
+                <div class="videoWrapper">
+                  <iframe class="iframe" width="640" height="360" src="http://www.youtube.com/embed/FFTjZilAwhM?enablejsapi=1&version=3&playerapiid=ytplayer&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                </div>
+              </div>
+              <div rel="elevator-racism-it-stops-with-me" class="video__main"> 
+                <div class="videoWrapper">
+                  <iframe class="iframe" width="640" height="360" src="http://www.youtube.com/embed/gA-y8uOJs9k?enablejsapi=1&version=3&playerapiid=ytplayer&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                </div>
+              </div>
+              <div rel="rights-talk-aug-2017-authors-rusty-young-and-kelly-b-nicholls" class="video__main">
+                <div class="videoWrapper">
+                  <iframe class="iframe" width="640" height="360" src="http://www.youtube.com/embed/bB2uZxekt-k?enablejsapi=1&version=3&playerapiid=ytplayer&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                </div>
+              </div>
+              <div rel="a-conversation-in-gender-equality-kate-jenkins" class="video__main">
+                <div class="videoWrapper">
+                  <iframe class="iframe" width="640" height="360" src="http://www.youtube.com/embed/dYtSfHCeb_s?enablejsapi=1&version=3&playerapiid=ytplayer&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="video__right cell small-12 medium-4 large-3">
+              <ul class="menu vertical video__thumbnail">
+                <li class="video__thumbnail-item" rel="human-rights-awards-2017">
+                  <ul class="video__split grid-x">
+                    <li class="cell small-4 video__item" style="background-image: url('https://img.youtube.com/vi/WiQq_XAVPLg/maxresdefault.jpg');"></li>
+                    <li class="cell small-8"><p>Human Rights Awards 2017</p></li>
+                  </ul>
+                </li>
+                <li class="video__thumbnail-item" rel="AFL-standup-to-racism">
+                  <ul class="video__split grid-x">
+                    <li class="cell small-4 video__item" style="background-image: url('https://img.youtube.com/vi/ASsZ-u9YV3c/maxresdefault.jpg"></li>
+                    <li class="cell small-8"><p>AFL. #StandUp to Racism</p></li>
+                  </ul>
+                </li>
+                <li class="video__thumbnail-item" rel="rugby-standup-to-racism">
+                  <ul class="video__split grid-x">
+                    <li class="cell small-4 video__item" style="background-image: url('https://img.youtube.com/vi/FFTjZilAwhM/maxresdefault.jpg');"></li>
+                    <li class="cell small-8"><p>Rugby. #StandUp to Racism</p></li>
+                  </ul>
+                </li>
+                <li class="video__thumbnail-item" rel="elevator-racism-it-stops-with-me">
+                  <ul class="video__split grid-x">
+                    <li class="cell small-4 video__item" style="background-image: url('https://img.youtube.com/vi/gA-y8uOJs9k/maxresdefault.jpg');"></li>
+                    <li class="cell small-8"><p>Elevator - Racism. It Stops With Me.</p></li>
+                  </ul>
+                </li>
+                <li class="video__thumbnail-item" rel="rights-talk-aug-2017-authors-rusty-young-and-kelly-b-nicholls">
+                  <ul class="video__split grid-x">
+                    <li class="cell small-4 video__item" style="background-image: url('https://img.youtube.com/vi/bB2uZxekt-k/maxresdefault.jpg');"></li>
+                    <li class="cell small-8"><p>Rights Talk Aug 2017: Authors Rusty Young & Kelly B Nicholls</p></li>
+                  </ul>
+                </li>
+                <li class="video__thumbnail-item" rel="a-conversation-in-gender-equality-kate-jenkins">
+                  <ul class="video__split grid-x">
+                    <li class="cell small-4 video__item" style="background-image: url('https://img.youtube.com/vi/bB2uZxekt-k/maxresdefault.jpg');"></li>
+                    <li class="cell small-8"><p>A Conversation in gender equality - Kate Jenkins</p></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion">
+        <div class="grid-container">
+      
+          <div class="accordion__group">
+            <h4>Browse articles</h4>
+            <ul class="menu">
+              <li><h5>Sort by</h5></li>
+              <li>
+                <ul class="accordion__list menu vertical list">
+                  <li class="init accordion__item">Most recent</li>
+                  <li class="accordion__item" data-value="Most Recent">Most recent</li>
+                  <li class="accordion__item" data-value="Most Popular">Most Popular</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu">
+              <li><h5>Filter by</h5></li>
+              <li>
+                <ul class="accordion__list menu vertical list">
+                  <li class="accordion__item init">Area of work</li>
+                  <li class="accordion__item" data-value="Area of work">Area of work</li>
+                  <li class="accordion__item" data-value="Type of media">Type of media</li>
+                  <li class="accordion__item" data-value="Author">Author</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="accordion__group">
+            <h4>Browse Project</h4>
+            <ul class="menu">
+              <li><h5>Filter by</h5></li>
+              <li>
+                <ul class="accordion__list menu vertical list">
+                  <li class="accordion__item init">Area of work</li>
+                  <li class="accordion__item" data-value="Area of work">Area of work</li>
+                  <li class="accordion__item" data-value="Popular Area">Popular Area</li>
+                </ul>
+                <ul class="accordion__list menu vertical list">
+                  <li class="accordion__item init">Year</li>
+                  <li class="accordion__item" data-value="Year">
+                  <h6>Enter a year</h6>
+                  <input type="text" placeholder="eg. 1999">
+                </li>
+                <!--   <li class="accordion__item">
+                    <h6>Enter a year</h6>
+                    <input type="text" placeholder="eg. 1999">
+                  </li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="accordion__group">
+            <h4>Browse Submissions</h4>
+            <ul class="menu">
+              <li><h5>Sort by</h5></li>
+              <li>
+                <ul class="accordion__list menu vertical list">
+                  <li class="accordion__item init">Most recent</li>
+                  <li class="accordion__item" data-value="Most Recent">Most recent</li>
+                  <li class="accordion__item" data-value="Most popular">Most popular</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu">
+              <li><h5>Filter by</h5></li>
+              <li>
+                <ul class="accordion__list menu vertical list">
+                  <li class="accordion__item init">Area of work</li>
+                  <li class="accordion__item" data-value="Area of work">Area of work</li>
+                  <li class="accordion__item" data-value="Popular area">Popular area</li>
+                </ul>
+                <ul class="accordion__list menu vertical list">
+                  <li class="accordion__item init">Comitee</li>
+                  <li class="accordion__item" data-value="Commitee">Committee</li>
+                  <li class="accordion__item" data-value="Search for a committee">
+                  <h6>Search for a committee</h6>
+                    <input type="text" placeholder="eg. Parliamentary Joint Committee">
+                    <ul class="menu vertical">
+                      <li><a href="#">Access and Equity Inquiry Panel</a></li>
+                      <li><a href="#">Advisory Group on Reform of Australian Government Administration</a></li>
+                      <li><a href="#">Attorney-General’s Department</a></li>
+                      <li><a href="#">Australia 2020 Summit</a></li>
+                      <li><a href="#">Australian Citizenship Test Review Committee</a></li>
+                      <li><a href="#">Australian Curriculum., Assessment and Reporting Authority</a></li>
+                      <li><a href="#">Australian Curriculum., Assessment and Reporting Authority</a></li>
+                      <li><a href="#">Australian Fair Pay Commission</a></li>
+                    </ul>
+                </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      </div>
+      
+      
+      <div class="sticky-footer">
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="cell small-12 medium-6">
+              <h6>Subscribe to our mailing list for updates direct to your inbox.</h6>
+              <p>Receive all out new lore ipsum door sit amet!</p>
+            </div>
+            <div class="cell small-10 medium-5">
+              <div class="input-group">
+                <input class="input-group-field" type="text">
+                <div class="input-group-button">
+                  <input type="submit" class="button postfix button--orange" value="Subscribe">
+                </div>
+              </div>
+            </div>
+            <div class="cell small-2 medium-1">
+              <div class="input-group-button">
+                <input type="submit" class="button postfix button--transparent" value="x">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="section bar bar--newsletter">
+      <div class="heading">
+        <h2 class="heading__title heading__title--black uppercase">Never miss a show. <br> <span class="heading__title--blue"> Join our mailing list now! </span></h2>
+      </div>
+      <div class="grid-container bar__content bar__content--newsletter">
+        <form id="bar-newsletter-form" action="/" class="bar__form">
+            <div class="grid-x">
+              <div class="col cell small-12 medium-12 large-4">
+                <label>
+                  <input type="text" placeholder="Enter your full name…" class="input">
+                </label>
+              </div>
+              <div class="col cell small-12 medium-12 large-4">
+                <label>
+                  <input type="email" placeholder="Enter your email address…" class="input">
+                </label>
+              </div>
+              <div class="col cell small-12 medium-12 large-4 align-right">
+                <a href="/" class="button postfix button--rounded button--medium button--white-violet">Subscribe</a>
+              </div>
+            </div>
+        </form>
+      </div> <!-- .newsletter__content -->
+    </div>
+      <div id="popup" class="popup">
+       <div class="popup__content align-center">
+        <h2 data-selectable="true" class="blue">Oops!</h2>
+        <h3 data-selectable="true">You have registered for <span class="blue">more than 5</span> upcoming events recently.</h3>
+          <p data-selectable="true">Due to limited ticket allocation, you won't be able to register for any more event until at least one of your current events have passed.</p>
+        </div>
+      </div>    <div class="signup sticky">
+      <a href="/" class="signup__content">
+        <img src="assets/img/icon/signup-bg.png" alt="Signup">
+        <h6 class="violet underline uppercase">Sign Up</h6>
+        <h6 class="primary uppercase">today!</h6>
+      </a>
+    </div>
+    
+    <div class="overlay overlay--filter"></div>
+    
+    <footer class="footer">
+      <div class="grid-container">
+        <div class="footer__content grid-x">
+          <div class="footer__left cell small-12 medium-12 large-8">
+            <div class="contact-details">
+              <ul class="footer__menu footer__menu--left menu align-left">
+                <li><a href="/" class="logo--footer"><img src="assets/img/logo-white.png" alt="Logo Footer"></a></li>
+                <li><a href="#">What’s On</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Promoters</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right cell small-12 medium-12 large-4">
+            <ul class="footer__menu footer__menu--right menu align-right">
+              <li><span>Follow us</span></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

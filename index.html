@@ -1,0 +1,734 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="grid-container">
+          <div class="nav__top top-bar">
+            <div class="nav__top-logo top-bar-logo">
+              <ul class="nav__top-menu nav__top-menu--logo menu">
+                <li>
+                  <a href="#" class="nav__bar-wrapper" data-toggle="nav__main" >
+                    <span class="nav__bar-1"></span>
+                    <span class="nav__bar-2"></span>
+                    <span class="nav__bar-3"></span>
+                  </a>
+                </li>
+                <li><a href="/" class="nav__logo nav__logo--default"></a></li>
+                <li class="nav__login mobile"><a href="/" class="button postfix button--rounded button--white-grey button--user-icon"><span><i class="fas fa-user"></i></span></a>
+                <div class="nav__submenu nav__submenu--login">
+                    <div class="nav__submenu-inner">
+                      <div class="header__login">
+                        <h5>Already a member? Please log in</h5>
+                        <form action="/">
+                          <div class="input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Email Address</label>
+                            <input type="text" class="input" placeholder="Enter your email address…"/>
+                          </div>
+                          <div class="input__wrapper input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Password</label>
+                            <input type="text" class="input" placeholder="Enter your password…"/>
+                          </div>
+                          <a href="/" class="forgot-password align-right underline">Forgot your password?</a>
+                          <div class="button__wrapper button__wrapper--padding">
+                            <a href="/" class="button postfix button--rounded button--medium button--white-violet">Log In</a>
+                          </div>
+                          <span class="sign-up">
+                            Not yet a member? <a href="/member-register.html" class="join">Join us now</a>
+                          </span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__search mobile">
+                  <a id="button-search" href="#" class="button postfix button--rounded button--white-grey button--search-icon"><span><i class="fas fa-search"></i></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__top-center top-bar-center">
+              <ul class="nav__top-menu nav__top-menu--left dropdown menu" data-dropdown-menu>
+                <li><a href="/event-listing.html">What's On</a></li>
+                <li><a href="/faq.html">FAQs</a></li>
+                <li><a href="/about-us.html">About us</a></li>
+                <li><a href="/contact-us.html">Contact</a></li>
+                <li class="nav__promoters">
+                  <a href="/">Promoters</a>
+                  <div class="nav__submenu nav__submenu--promoters">
+                  <ul class="menu vertical nav__submenu-inner ">
+                    <li><a href="/member-register.html" class="submenu__link">Become Our Promoters</a></li>
+                    <li><a href="/member-register.html" class="submenu__link">Sign In to Promoters’ Dashboard</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div> <!-- end .nav__top-left -->
+            <div class="nav__top-right top-bar-right">
+              <ul class="nav__top-menu nav__top-menu--right dropdown menu" data-dropdown-menu>
+                <li class="nav__login desktop"><a href="/" class="button postfix button--rounded button--white-grey">Login</a>
+                <div class="nav__submenu nav__submenu--login">
+                    <div class="nav__submenu-inner">
+                      <div class="header__login">
+                        <h5>Already a member? Please log in</h5>
+                        <form action="/">
+                          <div class="input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Email Address</label>
+                            <input type="text" class="input" placeholder="Enter your email address…"/>
+                          </div>
+                          <div class="input__wrapper input__wrapper input__wrapper--bordered input__wrapper--rounded input__wrapper--margin">
+                            <label class="input__label input__label--absolute input__label--blue">Your Password</label>
+                            <input type="text" class="input" placeholder="Enter your password…"/>
+                          </div>
+                          <a href="/" class="forgot-password align-right underline">Forgot your password?</a>
+                          <div class="button__wrapper button__wrapper--padding">
+                            <a href="/" class="button postfix button--rounded button--medium button--white-violet">Log In</a>
+                          </div>
+                          <span class="sign-up">
+                            Not yet a member? <a href="/member-register.html" class="join">Join us now</a>
+                          </span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__signup desktop"><a href="/" class="button postfix button--rounded button--white-grey ">Signup</a></li>
+                <li class="nav__search desktop">
+                  <a id="button-search" href="#" class="button postfix button--rounded button--white-grey button--search-icon"><span><i class="fas fa-search"></i></span></a>
+                </li>
+              </ul>
+            </div> <!-- end .nav__top-right -->   
+            <!-- <div class="overlay overlay--menu"></div> -->
+            <div id="submenu-search" class="nav__submenu nav__submenu--search">
+              <div class="grid-container bar__content bar__content--search-top">
+                <form id="bar-search-form" action="/" class="bar__form">
+                  <div class="grid-x">
+                    <div class="col cell small-10 medium-11">
+                      <label>
+                        <input type="text" placeholder="What are you looking for?…" class="input">
+                      </label>
+                    </div>
+                    <div class="col cell small-2 medium-1">
+                      <a href="/" class="button postfix button--transparent button--search-icon">
+                        <span>
+                          <i class="fas fa-search"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div> <!-- .newsletter__content -->
+            </div> <!-- .nav__submenu--search -->
+          </div> <!-- end .top-bar -->
+        </div>
+      </nav>
+    </header>    <main class="page">
+      <div class="landing">
+      
+      <div class="section hero hero--homepage">
+      
+        <div class="hero__item-wrapper hero__item-wrapper--homepage">
+      
+          <div class="hero__item" style="background-image:url('assets/img/homepage/hero.jpg')">
+            <div class="holder">
+              <div class="inner">
+                <h1 class="hero__title hero__title--big hero__title--white">Find Fun</h1>
+                <p class="hero__subtitle hero__subtitle--white">Promo tickets to the best arts, culture & entertainment. Only pay a booking fee.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="hero__item" style="background-image:url('assets/img/homepage/hero.jpg')">
+            <div class="holder">
+              <div class="inner">
+                <h1 class="hero__title hero__title--big hero__title--white">Find Fun</h1>
+                <p class="hero__subtitle hero__subtitle--white">Promo tickets to the best arts, culture & entertainment. Only pay a booking fee.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="hero__item" style="background-image:url('assets/img/homepage/hero.jpg')">
+            <div class="holder">
+              <div class="inner">
+                <h1 class="hero__title hero__title--big hero__title--white">Find Fun</h1>
+                <p class="hero__subtitle hero__subtitle--white">Promo tickets to the best arts, culture & entertainment. Only pay a booking fee.</p>
+              </div>
+            </div>
+          </div>
+      
+        </div> <!-- end .hero__item-wrapper -->
+      
+      </div><div class="section bar bar--search bar--reposition filter--wrapper">
+        <div class="grid-container bar__content bar__content--search filter">
+          <form id="bar--search" action="/" class="bar__form">
+            <div class="filter__group--wrapper grid-x small-up-1 medium-up-2 large-up-5">
+              <div class="col search cell cell-block">
+                <label>
+                  <input type="text" placeholder="Surprise me…" class="input">
+                </label>
+              </div>
+              <div class="col locate cell cell-block">
+                <label>
+                  <input type="text" placeholder="Melbourne, VIC" class="input location">
+                </label>
+              </div>
+              <div class="filter__group filter__group--datepicker col cell cell-block">
+                <div class="filter__label filter__label--datepicker filter__label--active">
+                  <i class="far fa-calendar"></i>
+                  <span class="filter__datepicker">This Month</span>
+                </div>
+                <div id="datepicker-dialog"></div>
+              </div>
+              <div class="filter__group filter__group--category col cell cell-block">
+                <div class="filter__label filter__label--category filter__label--active"><span>All Categories</span><i class="fas fa-chevron-down"></i></div>
+                <div class="filter__list--wrapper">
+                  <ul class="menu filter__list filter__list--category">
+                    <li class="filter__all filter__all--active">
+                      <input class="filter__category filter__category--all" type="checkbox" id="checkbox-category-all" name="checkbox-category-all" data-filter=".category-all" checked="checked"/>
+                      <label for="checkbox-category-all"></label>
+                      <span>All Categories</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-category-music" name="checkbox-category-music" data-filter=".category-music" />
+                      <label for="checkbox-category-music"></label>
+                      <span>Music</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-category-comedy" name="checkbox-category-comedy" data-filter=".category-comedy"  />
+                      <label for="checkbox-category-comedy"></label>
+                      <span>Comedy</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-category-sports" name="checkbox-venue-bth" data-filter=".category-sports"/>
+                      <label for="checkbox-category-sports"></label>
+                      <span>Sports</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-category-festivals" name="checkbox-category-festivals" data-filter=".category-festivals" />
+                      <label for="checkbox-category-festivals"></label>
+                      <span>Festivals</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-family-friendly" name="checkbox-family-friendly" data-filter=".family-friendly" />
+                      <label for="checkbox-family-friendly"></label>
+                      <span>Family Friendly</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-category-movies" name="checkbox-category-movies" data-filter=".category-movies"/>
+                      <label for="checkbox-category-movies"></label>
+                      <span>Movies</span>
+                    </li>
+                    <li>
+                      <input class="filter__category" type="checkbox" id="checkbox-category-theatres" name="checkbox-category-theatres" data-filter=".category-theatres"/>
+                      <label for="checkbox-category-theatres"></label>
+                      <span>Theatres</span>
+                    </li>
+                    <li class="filter__button">
+                      <div class="button--wrapper">
+                      <a href="#" class="button postfix button--white-violet button--rounded button--bordered filter__search">Apply</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col cell cell-block align-right">
+                <a href="/" class="button postfix button--rounded button--medium button--white-violet filter__search">Search</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> <!-- end .search-bar -->
+      
+      
+      
+      <div class="filter--wrapper">
+        <div class="grid-container filter__content">
+          <div class="grid-x menu filter__group--wrapper">
+      
+            <div class="filter__group filter__group--event">
+              <div class="filter__label filter__label--event filter__label--active"> <p>Show me <span>All Events</span> </p>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="filter__list--wrapper">
+                <ul class="menu filter__list filter__list--event">
+                  <li class="filter__all filter__all--active">
+                    <input class="filter__event filter__event--all" type="checkbox" id="checkbox-event-all" name="checkbox-event-all" data-filter=".event-all" checked="checked"/>
+                    <label for="checkbox-event-all"></label>
+                    <span>All Events</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-1" name="checkbox-event-sample-1" data-filter=".event-sample-1" />
+                    <label for="checkbox-event-sample-1"></label>
+                    <span>Event Sample 1</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-2" name="checkbox-event-sample-2" data-filter=".event-sample-2"  />
+                    <label for="checkbox-event-sample-2"></label>
+                    <span>Event Sample 2</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-3" name="checkbox-event-sample-3" data-filter=".event-sample-3"/>
+                    <label for="checkbox-event-sample-3"></label>
+                    <span>Event Sample 3</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-4" name="checkbox-event-sample-4" data-filter=".event-sample-4" />
+                    <label for="checkbox-event-sample-4"></label>
+                    <span>Event Sample 4</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-5" name="checkbox-event-sample-5" data-filter=".event-sample-5" />
+                    <label for="checkbox-event-sample-5"></label>
+                    <span>Event Sample 5</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-6" name="checkbox-event-sample-6" data-filter=".event-sample-6"/>
+                    <label for="checkbox-event-sample-6"></label>
+                    <span>Event Sample 6</span>
+                  </li>
+                  <li>
+                    <input class="filter__event" type="checkbox" id="checkbox-event-sample-7" name="checkbox-event-sample-7" data-filter=".event-sample-7"/>
+                    <label for="checkbox-event-sample-6"></label>
+                    <span>Event Sample 7</span>
+                  </li>
+                  <li class="filter__button">
+                    <div class="button--wrapper">
+                      <a href="#" class="button postfix button--white-violet button--rounded button--bordered filter__search">Apply</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+      
+            </div>
+      
+            <div class="filter__group filter__group--city">
+              <div class="filter__label filter__label--city filter__label--active"><p>in <span>All Cities 
+              </span> </p><i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="filter__list--wrapper">
+              <ul class="menu filter__list filter__city">
+                <li class="filter__all filter__all--active">
+                  <input class="filter__city filter__city--all" type="checkbox" id="checkbox-city-all" name="checkbox-city-all" data-filter=".city-all" checked="checked"/>
+                  <label for="checkbox-city-all"></label>
+                  <span>All Cities</span>
+                </li>
+                <li>
+                  <input class="filter__city" type="checkbox" id="checkbox-city-melbourne" name="checkbox-city-melbourne" data-filter=".city-melbourne" />
+                  <label for="checkbox-city-melbourne"></label>
+                  <span>Melbourne, VIC</span>
+                </li>
+                <li>
+                  <input class="filter__city" type="checkbox" id="checkbox-city-sydney" name="checkbox-city-sydney" data-filter=".city-sydney"  />
+                  <label for="checkbox-city-sydney"></label>
+                  <span>Sydney, NSW</span>
+                </li>
+                <li>
+                  <input class="filter__city" type="checkbox" id="checkbox-city-perth" name="checkbox-city-perth" data-filter=".city-perth"/>
+                  <label for="checkbox-city-perth"></label>
+                  <span>Perth, WA</span>
+                </li>
+                <li>
+                  <input class="filter__city" type="checkbox" id="checkbox-city-brisbane" name="checkbox-city-brisbane" data-filter=".city-brisbane" />
+                  <label for="checkbox-city-brisbane"></label>
+                  <span>Brisbane, QLD</span>
+                </li>
+                <li>
+                  <input class="filter__city" type="checkbox" id="checkbox-city-darwin" name="checkbox-city-darwin" data-filter=".city-darwin" />
+                  <label for="checkbox-city-darwin"></label>
+                  <span>Darwin, NT</span>
+                </li>
+                <li class="filter__button">
+                  <div class="button--wrapper">
+                    <a href="#" class="button postfix button--white-violet button--rounded button--bordered filter__search">Apply</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+        </div> <!-- end .filter__group--wrapper -->
+      
+      </div> <!-- end .filter__content -->
+      </div> <!-- end .filter--wrapper -->
+      
+      <div class="section listing">
+        <div class="grid-container">
+      
+          <div class="listing__switcher-wrapper">
+            <ul class="menu listing__switcher">
+              <li><a href="" class="grid">Grid</a></li>
+              <li><a href="#" class="list">List</a></li>
+            </ul>
+          </div>
+      
+          <div class="listing__item-wrapper grid-x">
+            <div class="listing__item cell small-12 medium-6 large-4">
+              <div class="listing__item-inner grid-x">
+                <div class="listing__image-block cell small-12">
+                  <a href="#" class="listing__image-wrapper">
+                    <span class="listing__image" style="background-image:url('assets/img/homepage/featured-1.jpg')">
+                    </span>
+                    <span class="listing__badge listing__badge--absolute listing__badge--grid" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                  </a>
+                </div>
+                <div class="listing__description cell small-12">
+                  <h6><a href="#" class="listing__item-title">Michael Shafar: Kosher Bacon</a></h6>
+                  <ul class="listing__item-menu menu">
+                    <li><a href="#" class="all-member">All Members Event</a></li>
+                    <li><a href="#" class="genre">Comedy</a></li>
+                  </ul>
+                  <span class="listing__item-date">12 Mar - 20 Apr 2018
+                  </span>
+                  <span class="listing__item-location">
+                    at The Comics Lounge, VIC
+                  </span>
+                  <span class="listing__badge listing__badge--list" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                </div>
+                <div class="listing__price cell small-12">
+                  <span class="price">2 for $15</span>
+                  <a href="#" class="button postfix button--white-violet button--rounded button--medium">Get Tickets</a>
+                </div>
+              </div> <!-- .listing__item-inner -->
+            </div>
+            <div class="listing__item cell small-12 medium-6 large-4">
+              <div class="listing__item-inner grid-x">
+                <div class="listing__image-block cell small-12">
+                  <a href="#" class="listing__image-wrapper">
+                    <span class="listing__image" style="background-image:url('assets/img/homepage/featured-2.jpg')">
+                    </span>
+                    <span class="listing__badge listing__badge--absolute listing__badge--grid" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                  </a>
+                </div>
+                <div class="listing__description cell small-12">
+                  <h6><a href="#" class="listing__item-title">Michael Shafar: Kosher Bacon</a></h6>
+                  <ul class="listing__item-menu menu">
+                    <li><a href="#" class="all-member">All Members Event</a></li>
+                    <li><a href="#" class="genre">Comedy</a></li>
+                  </ul>
+                  <span class="listing__item-date">12 Mar - 20 Apr 2018
+                  </span>
+                  <span class="listing__item-location">
+                    at The Comics Lounge, VIC
+                  </span>
+                  <span class="listing__badge listing__badge--list" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                </div>
+                <div class="listing__price cell small-12">
+                  <span class="price">2 for $15</span>
+                  <a href="#" class="button postfix button--white-violet button--rounded button--medium">Get Tickets</a>
+                </div>
+              </div> <!-- .listing__item-inner -->
+            </div>
+            <div class="listing__item cell small-12 medium-6 large-4">
+              <div class="listing__item-inner grid-x">
+                <div class="listing__image-block cell small-12">
+                  <a href="#" class="listing__image-wrapper">
+                    <span class="listing__image" style="background-image:url('assets/img/homepage/featured-3.jpg')">
+                    </span>
+                    <span class="listing__badge listing__badge--absolute listing__badge--grid" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                  </a>
+                </div>
+                <div class="listing__description cell small-12">
+                  <h6><a href="#" class="listing__item-title">Michael Shafar: Kosher Bacon</a></h6>
+                  <ul class="listing__item-menu menu">
+                    <li><a href="#" class="all-member">All Members Event</a></li>
+                    <li><a href="#" class="genre">Comedy</a></li>
+                  </ul>
+                  <span class="listing__item-date">12 Mar - 20 Apr 2018
+                  </span>
+                  <span class="listing__item-location">
+                    at The Comics Lounge, VIC
+                  </span>
+                  <span class="listing__badge listing__badge--list" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                </div>
+                <div class="listing__price cell small-12">
+                  <span class="price">2 for $15</span>
+                  <a href="#" class="button postfix button--white-violet button--rounded button--medium">Get Tickets</a>
+                </div>
+              </div> <!-- .listing__item-inner -->
+            </div>
+            <div class="listing__item cell small-12 medium-6 large-4">
+              <div class="listing__item-inner grid-x">
+                <div class="listing__image-block cell small-12">
+                  <a href="#" class="listing__image-wrapper">
+                    <span class="listing__image" style="background-image:url('assets/img/homepage/featured-4.jpg')">
+                    </span>
+                    <span class="listing__badge listing__badge--absolute listing__badge--grid" style="background-image:url('assets/img/homepage/italian-badge.png')">
+                    </span>
+                  </a>
+                </div>
+                <div class="listing__description cell small-12">
+                  <h6><a href="#" class="listing__item-title">Michael Shafar: Kosher Bacon</a></h6>
+                  <ul class="listing__item-menu menu">
+                    <li><a href="#" class="all-member">All Members Event</a></li>
+                    <li><a href="#" class="genre">Comedy</a></li>
+                  </ul>
+                  <span class="listing__item-date">12 Mar - 20 Apr 2018
+                  </span>
+                  <span class="listing__item-location">
+                    at The Comics Lounge, VIC
+                  </span>
+                  <span class="listing__badge listing__badge--list" style="background-image:url('assets/img/homepage/italian-badge.png')">
+                    </span>
+                </div>
+                <div class="listing__price cell small-12">
+                  <span class="price">2 for $15</span>
+                  <a href="#" class="button postfix button--white-violet button--rounded button--medium">Get Tickets</a>
+                </div>
+              </div> <!-- .listing__item-inner -->
+            </div>
+            <div class="listing__item cell small-12 medium-6 large-4">
+              <div class="listing__item-inner grid-x">
+                <div class="listing__image-block cell small-12">
+                  <a href="#" class="listing__image-wrapper">
+                    <span class="listing__image" style="background-image:url('assets/img/homepage/featured-5.jpg')">
+                    </span>
+                    <span class="listing__badge listing__badge--absolute listing__badge--grid" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                  </a>
+                </div>
+                <div class="listing__description cell small-12">
+                  <h6><a href="#" class="listing__item-title">Michael Shafar: Kosher Bacon</a></h6>
+                  <ul class="listing__item-menu menu">
+                    <li><a href="#" class="all-member">All Members Event</a></li>
+                    <li><a href="#" class="genre">Comedy</a></li>
+                  </ul>
+                  <span class="listing__item-date">12 Mar - 20 Apr 2018
+                  </span>
+                  <span class="listing__item-location">
+                    at The Comics Lounge, VIC
+                  </span>
+                  <span class="listing__badge listing__badge--list" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                </div>
+                <div class="listing__price cell small-12">
+                  <span class="price">2 for $15</span>
+                  <a href="#" class="button postfix button--white-violet button--rounded button--medium">Get Tickets</a>
+                </div>
+              </div> <!-- .listing__item-inner -->
+            </div>
+            <div class="listing__item cell small-12 medium-6 large-4">
+              <div class="listing__item-inner grid-x">
+                <div class="listing__image-block cell small-12">
+                  <a href="#" class="listing__image-wrapper">
+                    <span class="listing__image" style="background-image:url('assets/img/homepage/featured-6.jpg')">
+                    </span>
+                    <span class="listing__badge listing__badge--absolute listing__badge--grid" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                  </a>
+                </div>
+                <div class="listing__description cell small-12">
+                  <h6><a href="#" class="listing__item-title">Michael Shafar: Kosher Bacon</a></h6>
+                  <ul class="listing__item-menu menu">
+                    <li><a href="#" class="all-member">All Members Event</a></li>
+                    <li><a href="#" class="genre">Comedy</a></li>
+                  </ul>
+                  <span class="listing__item-date">12 Mar - 20 Apr 2018
+                  </span>
+                  <span class="listing__item-location">
+                    at The Comics Lounge, VIC
+                  </span>
+                  <span class="listing__badge listing__badge--list" style="background-image:url('assets/img/homepage/comedy-badge.png')">
+                    </span>
+                </div>
+                <div class="listing__price cell small-12">
+                  <span class="price">2 for $15</span>
+                  <a href="#" class="button postfix button--white-violet button--rounded button--medium">Get Tickets</a>
+                </div>
+              </div> <!-- .listing__item-inner -->
+            </div>
+          </div> <!-- .listing__item-wrapper -->
+          <div class="button__wrapper">
+            <a href="/" class="button postfix button--rounded button--medium button--white-violet button--big">Show all events</a>
+          </div>
+        </div> <!-- .grid-container -->
+      </div> <!-- .listing -->
+      
+      <div class="section subscription">
+        <div class="grid-container subscription__content">
+          <div class="heading heading--padding">
+            <h2 class="heading__title heading__title--black uppercase">See more in your city </h2>
+            <h3 class="heading__subtitle heading__subtitle--black">Join now for tickets to the best arts & entertainment.</h3>
+          </div>
+          <div class="grid-x small-up-1 medium-up-2 large-up-2">
+            <div class="subscription__item cell cell-block">
+              <div class="subscription__inner">
+                <div class="subscription__heading subscription__heading--blue">
+                  <h3 class="subscription__title subscription__title--white">Promotix Free</h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item subscription__price-wrapper"><h2 class="subscription__price">$0.00 p.a</h2></li>
+                  <li class="list-group-item">Comedy</li>
+                  <li class="list-group-item">Festivals Item 2</li>
+                  <li class="list-group-item">Live music</li>
+                  <li class="list-group-item">Arts & culture</li>
+                  <li class="list-group-item disabled">Film</li>
+                  <li class="list-group-item disabled">Exclusive events</li>
+                  <li class="list-group-item disabled">Up to 4 tickets on select shows</li>
+                  <div class="button__wrapper button__wrapper--padding button__wrapper--rounded button__wrapper--bordered">
+                    <a href="/" class="button postfix button--rounded button--big button--white-violet">Show all events</a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="subscription__item cell cell-block">
+              <div class="subscription__inner">
+                <div class="subscription__heading subscription__heading--violet">
+                  <h3 class="subscription__title subscription__title--white">Promotix Premium</h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item subscription__price-wrapper"><h2 class="subscription__price">$35.00 p.a</h2></li>
+                  <li class="list-group-item">Comedy</li>
+                  <li class="list-group-item">Festivals Item 2</li>
+                  <li class="list-group-item">Live music</li>
+                  <li class="list-group-item">Arts & culture</li>
+                  <li class="list-group-item">Film</li>
+                  <li class="list-group-item">Exclusive events</li>
+                  <li class="list-group-item">Up to 4 tickets on select shows</li>
+                  <div class="button__wrapper button__wrapper--padding button__wrapper--rounded button__wrapper--bordered">
+                    <a href="/" class="button postfix button--rounded button--big button--white-violet">Show all events</a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section list-event">
+        <div class="holder">
+          <div class="inner">
+            <div class="heading">
+              <h2 class="heading__title heading__title--white uppercase">List an Event</h2>
+              <h3 class="heading__subtitle heading__subtitle--white">With Promotix it's free and easy</h3>
+            </div>
+            <div class="button__wrapper button__wrapper--padding">
+              <a href="/" class="button postfix button--rounded button--big button--white-blue">Let's do it!</a>
+            </div>
+          </div>
+        </div>
+      </div><div class="section partners">
+        <div class="grid-container">
+          <h5 class="partners__heading"><span>Promotix</span> is proud to be associated with great industry partners:</h5>
+          <div class="grid-x">
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-1.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-2.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-3.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-4.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-5.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-6.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-7.png')">      
+              </a>
+            </div>
+            <div class="partners__item cell small-12 medium-3 large-auto">
+              <a href="#" class="partners__item-image" style="background-image:url('assets/img/homepage/logo-8.png')">      
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      
+      
+    </main>
+    <div class="section bar bar--newsletter">
+      <div class="heading">
+        <h2 class="heading__title heading__title--black uppercase">Never miss a show. <br> <span class="heading__title--blue"> Join our mailing list now! </span></h2>
+      </div>
+      <div class="grid-container bar__content bar__content--newsletter">
+        <form id="bar-newsletter-form" action="/" class="bar__form">
+            <div class="grid-x">
+              <div class="col cell small-12 medium-12 large-4">
+                <label>
+                  <input type="text" placeholder="Enter your full name…" class="input">
+                </label>
+              </div>
+              <div class="col cell small-12 medium-12 large-4">
+                <label>
+                  <input type="email" placeholder="Enter your email address…" class="input">
+                </label>
+              </div>
+              <div class="col cell small-12 medium-12 large-4 align-right">
+                <a href="/" class="button postfix button--rounded button--medium button--white-violet">Subscribe</a>
+              </div>
+            </div>
+        </form>
+      </div> <!-- .newsletter__content -->
+    </div>
+      <div id="popup" class="popup">
+       <div class="popup__content align-center">
+        <h2 data-selectable="true" class="blue">Oops!</h2>
+        <h3 data-selectable="true">You have registered for <span class="blue">more than 5</span> upcoming events recently.</h3>
+          <p data-selectable="true">Due to limited ticket allocation, you won't be able to register for any more event until at least one of your current events have passed.</p>
+        </div>
+      </div>    <div class="signup sticky">
+      <a href="/" class="signup__content">
+        <img src="assets/img/icon/signup-bg.png" alt="Signup">
+        <h6 class="violet underline uppercase">Sign Up</h6>
+        <h6 class="primary uppercase">today!</h6>
+      </a>
+    </div>
+    
+    <div class="overlay overlay--filter"></div>
+    
+    <footer class="footer">
+      <div class="grid-container">
+        <div class="footer__content grid-x">
+          <div class="footer__left cell small-12 medium-12 large-8">
+            <div class="contact-details">
+              <ul class="footer__menu footer__menu--left menu align-left">
+                <li><a href="/" class="logo--footer"><img src="assets/img/logo-white.png" alt="Logo Footer"></a></li>
+                <li><a href="#">What’s On</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Promoters</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right cell small-12 medium-12 large-4">
+            <ul class="footer__menu footer__menu--right menu align-right">
+              <li><span>Follow us</span></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
