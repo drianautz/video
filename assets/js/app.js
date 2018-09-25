@@ -42423,11 +42423,11 @@ function video() {
     var same_rel = $(this).attr("rel");
     console.log(same_rel);
 
-    $('.iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    // $('.iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
     $('.video__thumbnail-item').removeClass('active');
     $(this).addClass('active');
-    $('.video__main').removeClass('active');
-    $('.video__main[rel="' + same_rel + '"]').addClass('active');
+    // $('.video__main').removeClass('active');
+    // $('.video__main[rel="' + same_rel + '"]').addClass('active');
   });
 }
 
